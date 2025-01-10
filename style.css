@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+.wrap {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+
+.photoContainer {
+    width: 50%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infoContainer {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.socialContainer {
+    display: flex;
+}
+
+.socialContainer .socialItem {
+    width: 30px;
+    height: 30px;
+    background-color: #333;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.photo {
+    width: 500px;
+    height: 650px;
+  background-image:url(img/image.png);
+  background-position: center;
+  background-size: cover;
+    border-radius: 30px;
+    box-shadow: 0 10px 10px #999;
+}
+
+.infoContainer .mainInfoContainer {
+    padding: 0 50px 0 0;
+}
+
+.infoContainer .mainInfoContainer p {
+    margin: 30px 0;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.infoContainer .mainInfoContainer .controlls a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.infoContainer .mainInfoContainer h1 span {
+    color: orange;
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.socialItem:hover {
+    position: relative;
+    top: -5px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 30px;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+form input {
+    width: 300px;
+    height: 30px;
+    border: none;
+    box-shadow: 0 0 10px #999;
+    border-radius: 5px;
+    padding: 0 10px;
+    outline: none;
+}
+
+form textarea {
+    width: 300px;
+    height: 100px;
+    border: none;
+    box-shadow: 0 0 10px #999;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+    margin-top: 10px;
+    resize: none;
+}
+
+form button {
+    margin: 10px 0;
+    border: none;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .wrap {
+        flex-direction: column;
+    }
+
+    .photoContainer {
+        width: 100%;
+    }
+
+    .infoContainer {
+        width: 100%;
+    }
+}
+.infoContainer H4{
+    margin-top: 30PX;
+}
+.socialItem i{
+    color: white;
+}
