@@ -98,3 +98,10 @@
      background-position: center;
      
  }
+ @media  screen and (max-width:800px) {
+    .projectItem{
+        width:  500px;
+        
+
+    }
+ }
