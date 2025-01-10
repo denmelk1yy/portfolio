@@ -156,7 +156,9 @@ align-items: center;
   .aboutme{
     height: 1700px;
   }
- 
+    .text{
+        font-size:25px;
+    }
 }
 .edit{
     height: 60px;
