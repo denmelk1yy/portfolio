@@ -131,23 +131,29 @@ align-items: center;
     display: flex;
     justify-content: center;
 }
-@media screen and (max-width: 900px){
+@media screen and (max-width: 800px){
     .main{
         flex-direction: column;
+        height: 1300PX;
+        align-items: center;
     }
     .text{
         margin: 0;
         width: 100%;
+        height:80% ;
     }
-    .information{
-        height: 170vh;
+    .photo{
+        width: 300px;
+        height: 300px;
+        align-items: center;
+        justify-content: center;
+
     }
-   .education{
-    margin-top: 500px;
-   }
-   .photo{
-    margin-bottom: 50px;
-   }
+    .image{
+        width: 200px;
+        height: 200px;
+    }
+ 
 }
 .edit{
     height: 60px;
